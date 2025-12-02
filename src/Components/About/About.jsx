@@ -123,7 +123,7 @@ function About() {
                         <h1>Skills</h1>
                         <ul>
                             <li>JAVA</li>
-                            <li>MERN Stack</li>
+                            <li>MERN Stack, Tailwind, Next.js</li>
                             <li>SQL</li>
                             <li>Project Management</li>
                             <li>Prompt Engineering</li>

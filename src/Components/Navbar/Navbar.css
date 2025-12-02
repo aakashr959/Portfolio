@@ -4,44 +4,77 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px;
+    padding: 24px 40px;
     position: fixed;
     top: 0;
     z-index: 20;
-    background-color: rgb(24, 27, 30);
+    background: rgba(24, 27, 30, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(79, 179, 202, 0.1);
+    border-bottom: 1px solid rgba(79, 179, 202, 0.2);
+    transition: all 0.3s ease;
 }
 
-
+nav:hover {
+    box-shadow: 0 4px 40px rgba(79, 179, 202, 0.15);
+}
 
 nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: 32px;
     color: white;
     list-style: none;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 nav ul a {
     cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
-nav ul a:hover{
-    color: green;
+nav ul a:hover {
+    color: #4fb3ca;
+}
+
+nav ul a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #4fb3ca, #2b389a);
+    transition: width 0.3s ease;
+}
+
+nav ul a:hover::after {
+    width: 100%;
 }
 
 .active {
-    color: green;
-    border-bottom: 2px solid green;
+    color: #4fb3ca;
+}
+
+.active::after {
+    width: 100%;
 }
 
 nav h1 {
-    font-size: 44px;
-    font-weight: 600;
-    background: linear-gradient(to right, rgb(6, 70, 207),white);
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #4fb3ca, #2b389a);
     background-clip: text;
     color: transparent;
+    letter-spacing: -1px;
+    transition: transform 0.3s ease;
+}
+
+nav h1:hover {
+    transform: scale(1.05);
 }
 
 

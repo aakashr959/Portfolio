@@ -10,15 +10,21 @@
 }
 
 .slider {
-    width: 90%;
-    height: 270px;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
     display: flex;
     align-items: center;
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: auto;
     gap: 30px;
     scrollbar-width: none;
     padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
 }
 
 

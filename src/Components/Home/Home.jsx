@@ -67,6 +67,7 @@ function Home() {
                     </button>
                     
                     <button className = "resume-btn" onClick = {my_resume}> See my Resume </button>
+
                 </div>
 
 
